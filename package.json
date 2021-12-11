@@ -1,0 +1,26 @@
+{
+  "name": "cardano-electron",
+  "version": "1.0.0",
+  "description": "tooling to help me with assessing projects and keeping track",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./out/electron/index.js",
+    "build": "cp ./src/website/index.html ./out/website/index.html && tsc",
+    "build:watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plamen5kov/cardano-electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plamen5kov/cardano-electron/issues"
+  },
+  "homepage": "https://github.com/Plamen5kov/cardano-electron#readme",
+  "devDependencies": {
+    "electron": "^16.0.4",
+    "typescript": "^4.5.3"
+  }
+}
